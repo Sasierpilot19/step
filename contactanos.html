@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="es" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="STEP, encuentra tus tenis ideales">
+  <title>Contactanos | STEP</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="">
+<header class="encabezado">
+  <nav class="nav-principal">
+    <a href="index.html" class="logo">STEP</a>
+    <ul class="menu">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="hombre.html">Hombre</a></li>
+      <li><a href="mujer.html">Mujer</a></li>
+      <li><a href="encuentranos.html">Encuentranos</a></li>
+      <li><a href="contactanos.html">Contactanos</a></li>
+    </ul>
+    <button type="button" class="tema-boton" id="cambiar-tema">Modo claro</button>
+  </nav>
+</header>
+<main>
+<section class="contacto-pagina">
+  <div class="ancho-contenido">
+    <p class="etiqueta">ESTAMOS PARA AYUDARTE</p>
+    <h1>Contactanos</h1>
+    <p class="subtitulo">Cuentanos que producto te interesa y nos pondremos en contacto contigo</p>
+    <form id="formulario-contacto" novalidate>
+      <div class="campo">
+        <label for="nombre">Nombre completo</label>
+        <input type="text" id="nombre" name="nombre" >
+      </div>
+      <div class="campo">
+        <label for="email">Correo electronico</label>
+        <input type="email" id="email" name="email" >
+      </div>
+      <div class="campo">
+        <label for="telefono">Numero telefonico</label>
+        <input type="tel" id="telefono" name="telefono" >
+      </div>
+      <div class="campo">
+        <label for="comentario">Producto de tu interes</label>
+        <textarea id="comentario" name="comentario" rows="4"></textarea>
+      </div>
+      <button type="submit" class="boton">Enviar formulario</button>
+      <p id="mensaje-formulario" role="status"></p>
+    </form>
+  </div>
+</section>
+</main>
+<script src="function.js"></script>
+</body>
+</html>
